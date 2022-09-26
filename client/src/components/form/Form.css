@@ -1,0 +1,64 @@
+.subscribe{
+    text-align: center;
+    width: 100%;
+}
+.subscribe h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+.subscribe p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.subscribeForm input{
+    text-align: center;
+    border-radius: 5px;
+}
+.subscribeForm .inputCover{
+    margin-bottom: 0.5rem;
+}
+.subscribe .btn{
+    width: 100% !important;
+}
+.bg-subscribe {
+    background-color: var(--lightBackground);
+    padding: 2rem;
+    margin: 3rem 0;
+}
+.sm-subscribe .btn{
+    margin-top: 0 !important;
+    padding: 0.8rem !important;
+}
+.sm-subscribe .inputCover{
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 720px){
+    .lg-subscribe .subscribeForm {
+        border-radius: 5px;
+        display: flex;
+        align-items: baseline;
+
+    }
+    .lg-subscribe .subscribeForm div{
+        flex-basis: 40%;
+    }
+    .lg-subscribe .subscribeForm input[type="submit"]{
+        flex-basis: 20%;
+    }
+    .lg-subscribe  .subscribeForm input{
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    .lg-subscribe .subscribeForm{
+        max-width: 680px;
+        margin:auto;
+    }
+    .lg-subscribe.bg-subscribe {
+        padding: 5rem 0;
+    }
+  }

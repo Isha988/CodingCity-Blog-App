@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Suez+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+:root{
+  --grey: rgba(106, 138, 155, 0.6);
+  --lightGrey: rgb(233, 236, 239);
+  --red:  rgba(255, 0, 0, 0.8) ;
+  --redLight: rgba(255, 0, 0, 0.5);
+  --simpleHeader: #f8f9fa;
+  --blackLight: rgba(0, 0, 0, 0.6);
+  --blackExtraLight: rgba(0, 0, 0, 0.2);
+  --overlay: rgba(168, 170, 171, 0.7);
+  --windowOverlay: rgba(0,0,0,.15);
+  --green : rgb(89, 212, 0); 
+  --foreground: #000;
+  --background: #fff;
+  --lightBackground: #f2f4f6;
+  --hoverOpacity: 0.4;
+  --hoverOpacity2: 0.6 
+}
+body{
+  background: var(--background);
+}
+body.disable, .disable #root, .disable #main{
+  overflow : hidden;
+}
+.slide{
+  transform: translateX(300px);
+  transition: transform 0.4s linear;
+}
+.navbar , #main{
+  transition: transform 0.4s linear;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.heading{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.heading2{
+  font-size: 2rem;
+  font-weight: 800;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  display: block;
+  font-family: Alegreya Sans;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.sm-heading{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+  color: var(--foreground);
+}
+*:not(span, svg, path){
+  color: var(--foreground);
+}
+.btn{
+  background-color: var(--red);
+  color: white !important;
+  outline: none;
+  border: none !important;
+  cursor: pointer;
+  padding: 0.8rem 2rem ;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  min-width: 200px;
+}
+.btn:hover{
+  background-color: var(--redLight)
+}
+.overlay{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  z-index: 50;
+}
+.moreOptions{
+  position: absolute;
+  bottom: 0;
+}
+.option{
+  opacity: var(--hoverOpacity2);
+  font-family: Open Sans;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  cursor: pointer; 
+  display: inline-block;  
+}
+.option:hover{
+  opacity: 1;
+  border-bottom: 1px solid;
+}
+.normalForm{
+  max-width: 450px;
+}
+.form input, .form textarea{
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  border:1px solid  rgba(168, 170, 171,0.5);
+  font-size: 0.8rem;
+  font-family: Alegreya Sans;
+  color: var(--blackLight)
+}
+.form textarea{
+  resize: vertical;
+}
+.form label{
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: Alegreya Sans;
+  margin-bottom: 0.8rem;
+}
+.normalForm .btn, .sm-btn{
+  margin-left: 0;
+  margin-top: 1rem;
+  min-width: max-content ;
+  width: max-content !important;
+}
+.inputCover{
+  position: relative;
+}
+.srv-validation-message, .validationError{
+  color: var(--red);
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+}
+.srv-validation-message ~ input,  
+.srv-validation-message ~ textarea, 
+.validationError ~ input{
+  border-color: var(--red) !important;
+  border-radius: 2px;
+}
+
+.subTitle{
+    font-family: Alegreya Sans;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.6rem;
+}
+.inner{
+  max-width: 560px;
+  margin: auto;
+  padding: 0 1.2rem;
+}
+.socialIcon{
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer
+}
+.facebook:hover{
+  color: #1876f2;
+}
+.github:hover{
+  color: rgb(150, 149, 149)
+}
+.linkedIn:hover{
+  color: #0a66c2;
+}
+.twitter:hover{
+  color: #1d9bf0;
+}
+.icon{
+  font-size: 1rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  display: inline;
+}
+.last{
+  margin-right:0;
+}
+.first{
+  margin-left: 0;
+}
+.icon:hover{
+  opacity: var(--hoverOpacity);
+}
+.sm-hide{
+  display: none;
+}
+.hideScrollBar{
+  -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.footer{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.footer p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.red{
+  color: red;
+}
+.about{
+  max-width: 720px;
+  margin: auto;
+  width: 100%;
+}
+.about p{
+  margin: 2rem 0;
+  line-height: 1.5rem;
+}
+.about h2{
+  font-size: 1.90rem;
+  text-transform: none;
+}
+@media only screen and (min-width: 720px){
+  .inner{
+    max-width: 680px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .gridItem{
+    min-height: 0;
+    min-width: 0;
+  }
+}
+@media only screen and (min-width: 1020px){
+  .inner{
+    max-width: 980px;
+  }
+  .sm-hide{
+    display: initial;
+  }
+  .lg-hide{
+    display: none;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .contactPage{
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .contactPage .formCover{
+    flex:3;
+  }
+  .contactPage .profileCard{
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .inner{
+    max-width: 1160px;
+  }
+}

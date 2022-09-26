@@ -1,0 +1,194 @@
+.editorCover{
+    position: relative;
+}
+.editorWrapper{
+    border: 1px solid rgba(168, 170, 171,0.5);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.editorToolbar{
+    border: none;
+    z-index: 10;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom:  1px solid rgba(168, 170, 171,0.5);
+    width: 100%;
+    position: sticky;
+    top:0rem;
+    color: #000 !important;
+}
+.editorToolbar input, .editorToolbar button, .editorToolbar a{
+    color: #000 !important;
+}
+.openGallery{
+    z-index:11;
+    position: sticky;
+    width: 100%;
+    top: -1rem; 
+    padding: 1rem 1rem 0;
+}
+.openGallery div{
+    opacity: 0.9;
+    position: absolute;
+    right:1rem;
+}
+.editorToolbar img {
+    object-fit: initial;
+    width: initial;
+    height: initial;
+}
+.editor{
+    padding: 1rem 1rem 0;
+    border: none;
+    margin-bottom: 1rem;
+}
+.blogForm{
+    position: relative;
+    border: 1px dashed rgba(168, 170, 171,0.5);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.blogForm .selectedImage{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+}
+.blogForm .selectedImage img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.selectedImage .overlay{
+    background-color: var(--background);
+    opacity: var(--hoverOpacity2);
+}
+.blogForm .inputs{
+    margin-top: 4rem;
+    position: relative;
+    z-index: 100;
+}
+.blogForm input, .blogForm textarea{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.titleInput{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.descInput{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.blogForm label.option:hover{
+    border-bottom: none;
+    cursor: text;
+}
+.categorySelect{
+   border: none;
+   outline: none;
+   background-color: transparent;
+   margin-top: 0;
+}
+.blogForm option{
+    background-color: var(--background);
+    color: var(--foreground);
+}
+.chooseFile{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    z-index: 100;
+}
+.imageWindow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 2rem;
+    display: none;
+    z-index: 1000;
+}
+.imageWindow.visible{
+    display: block;
+    flex-direction: column;
+}
+.imageWindowHeader{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+.imageWindow .overlay{
+    background: var(--lightBackground);
+}
+.imageWindowHeader .option{
+    color: black;
+}
+.imageUpload{
+    margin-right: 4rem;
+    border-color: red !important;
+}
+.imageUpload label{
+    cursor: pointer; 
+}
+.imageUpload {
+    opacity: 0.9;
+}
+.closeWindow{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.imageGrid{
+    position: relative;
+    z-index: 100;
+    overflow-y: auto;
+    margin: 2rem auto;
+    height: calc(100% - 108px);
+}
+.imageCard{
+    position: relative;
+    background-color:var(--background);
+    padding: 1rem;
+    height: max-content;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+.image{
+  width: 100%;
+  aspect-ratio: 1.5;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 720px){
+    .titleInput{
+        font-size: 3rem;
+    }
+    .blogForm .inputs{
+        margin-top: 5rem;
+    }
+    .imageCard {
+        margin-bottom: 0;
+    }
+  }
