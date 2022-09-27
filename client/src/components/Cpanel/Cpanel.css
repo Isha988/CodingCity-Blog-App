@@ -17,7 +17,7 @@
     top:0rem;
     color: #000 !important;
 }
-.editorToolbar input, .editorToolbar button, .editorToolbar a{
+.editorToolbar input, .editorToolbar button, .editorToolbar a, .editorToolbar li{
     color: #000 !important;
 }
 .openGallery{
