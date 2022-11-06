@@ -27,8 +27,6 @@ A MERN stack personal blogging application with rich text editor for writing blo
 - Contact and Connets with SendInBlue.
 - Only Admin login.
 
-## 🎥 Demo
-
 
 
 
