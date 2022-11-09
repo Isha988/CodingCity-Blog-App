@@ -56,7 +56,7 @@ const scheduleCampaign = async(blog) => {
   let emailCampaigns = new SibApiV3Sdk.CreateEmailCampaign();
 
   const date = new Date().getTime();
-  const halfHour = 30*60*1000 ; 
+  const halfHour = 30 * 60 * 1000 ; 
   const scheduledAt = new Date(date + halfHour)
   
   emailCampaigns = {

@@ -171,7 +171,7 @@
     position: relative;
     background-color:var(--background);
     padding: 1rem;
-    height: max-content;
+    min-height: initial !important;
     border-radius: 0.3rem;
     margin-bottom: 1.5rem;
 }

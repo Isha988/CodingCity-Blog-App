@@ -65,10 +65,10 @@ function AddBlog() {
     <>
       <Header heading={isEdit? "Edit blog": "Create new blog"}/>
       <section className="inner">
-        {isEdit && loading && (<SimpleResponseMessage type={Responses.LOADING}/>)}
+        {loading && (<SimpleResponseMessage type={Responses.LOADING}/>)}
         {isEdit && !loading && !blog && (<SimpleResponseMessage message="no result found"/>)}
 
-        {isEdit && !loading && blog && (
+        {((isEdit && !loading && blog) || !isEdit) &&  (
           <>
             <Form setBlog={setNewBlog} blog={newBlog} openWindow={openWindow}/>
             <DraftEditor setBlog={setNewBlog} blog={newBlog} openWindow={openWindow}/>      
@@ -76,13 +76,6 @@ function AddBlog() {
           </>
         )}
 
-        {!isEdit && (
-          <>
-            <Form setBlog={setNewBlog} blog={newBlog} openWindow={openWindow}/>
-            <DraftEditor setBlog={setNewBlog} blog={newBlog} openWindow={openWindow}/>      
-            <button className="btn sm-btn" onClick={handelSubmit}>save</button>
-          </>
-        )}
       </section>
       <ImageWindow setBlog={setNewBlog} blog={newBlog} windowState={windowState} closeWindow = {closeWindow}/>
     </>
