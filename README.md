@@ -1,4 +1,4 @@
-![CodingCity Banner](https://github.com/Isha988/CodingCity-Blog-App/blob/main/images/codingCity%20Banner.png)
+![codingCity Banner](https://user-images.githubusercontent.com/89572340/209066044-1b6f61ef-cb18-47be-94d4-b442e5fc209a.png)
 
 # 👩🏽‍💻 CodingCity
 
