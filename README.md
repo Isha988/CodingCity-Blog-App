@@ -22,7 +22,7 @@ A MERN stack personal blogging application with rich text editor for writing blo
 ## 📝 Features
 
 - Rich Text Editor for writing and editing blogs.
-- Subscription to website through SendInBlue double opt-in.
+- Subscription to website through SendInBlue _double opt-in_.
 - Dark and Light themes.
 - Contact and Comments with SendInBlue.
 - Only Admin login.
